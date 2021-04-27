@@ -58,6 +58,9 @@ class SyntaxCompnent extends Component {
     render() {
         return (
             <>
+                <h3>
+                    compnent를 사용한 개발. 신규 개발에서는 hooks사용 권장
+                </h3>
                 <div>{this.state.first} x {this.state.second} = ?</div>
                 <form onSubmit={this.calcSubmit}>
                     <input ref={ this.initInputAnsw } type="text" value={this.state.inputValue} onChange={this.inputVal} />

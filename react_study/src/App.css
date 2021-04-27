@@ -84,7 +84,14 @@ body{
   list-style: none;
   padding-right: 10px;
   text-align: right;
+  border-bottom: 1px solid #524f4f;
+  padding-bottom: 10px;
 }
+
+.menu > ul > li:nth-child(n+2){
+  padding: 10px 0;
+}
+
 .menu > ul > li > a{
   text-decoration: none;
   color: white;

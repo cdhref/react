@@ -32,8 +32,9 @@ class Nav extends Component{
                     <ul>
                         <li>
                             <a href="/SyntaxCompnent">文法参照用(Compnent)</a>
+                        </li>
+                        <li>
                             <a href="/SyntaxHooks">文法参照用(Hooks)</a>
-
                         </li>
                     </ul>
                 </div>

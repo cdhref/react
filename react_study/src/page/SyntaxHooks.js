@@ -49,6 +49,9 @@ export default function SyntaxHooks(){
 
     return (
         <>
+            <h3>
+                hooks사용
+            </h3>
             <div>{ first } x { second } = ?</div>
             <form onSubmit={ calcSubmit }>
                 <input ref={ inputAnsw } type="text" value={ inputValue } onChange={ inputVal } />

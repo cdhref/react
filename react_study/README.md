@@ -50,54 +50,54 @@ http://localhost:3000
 ### `npm test`
 
 대화형 모드를 통한 테스트가 가능합니다.\
-테스트에 관한 정보를 다음 링크에서 얻을 수 있습니다.[running tests](https://facebook.github.io/create-react-app/docs/running-tests) 
+테스트에 관한 정보를 다음 링크에서 얻을 수 있습니다. [running tests](https://facebook.github.io/create-react-app/docs/running-tests) 
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+build 폴더에서 배포용 앱을 build합니다.\
+배포 된 앱의 올바른 패키징, 퍼포먼스를 위해 빌드를 최적화 합니다.\
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+빌드가 작업이 간소화 되며 파일명에 hash가 포함됩니다.\
+앱의 배포 준비는 이걸로 끝입니다.!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+배포에 대한 자세한 설명은 다음 링크를 참조하세요. [deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**메모: 해당 작업을 수행하면 수행 전 상태로 되돌릴 수 없습니다.!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+create-react-app의 구성이 마음에 들지 않는다면 해당 명령어를 수행 후 설정 및 구성을 수정 할 수 있습니다. 이 명령은 단일 빌드 종속성을 제거합니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+이 명령을 통해 프로젝트의 모든 설정파일 및 종속성(webpack, Babel, ESLint, etc)을 프로젝트 경로로 복사하여 사용자가 직접 제어 할 수 있도록 합니다. `eject`를 제외한 명령은 해당 명령 수행 후에도 사용이 가능하며 해당 명령은 복사된 프로젝트 내의 파일을 타겟으로 하도록 설정 됩니다.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`eject`명령을 사용 해야만 하는것은 아닙니다. create-react-app를 통해 구성 된 기능들이 마음에 들지 않는 경우에는 명령을 수행 후 커스터마이징 할 수 있습니다.
 
-## Learn More
+## 더 알아보기
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Create React App에 대해 알아보기 [documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React 관련 참조 [documentation](https://reactjs.org/).
 
-### Code Splitting
+### 코드 분할
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+코드 분할에 대한자료: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### 번들 크기 분석
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+번들 크기 분석에 대한 자료: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+### app 생성 관련
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+app 생성 관련 자료: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### 고급 구성
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+고급 구성에 관한 자료: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### 배포
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+배포에 관한 자료: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+### `npm run build` 실패 시
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+참고 자료: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -24,3 +24,6 @@ npm init명령어로 인해 생성됨.
 
 ## react코드 작성 관련 
 - https://www.w3schools.com/react/default.asp
+
+## hooks에 관한 설명
+- https://ko.reactjs.org/docs/hooks-intro.html

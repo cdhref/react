@@ -28,26 +28,29 @@ npm init명령어로 인해 생성됨.
 ## hooks에 관한 설명
 - https://ko.reactjs.org/docs/hooks-intro.html
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# 프로젝트 생성
 
-In the project directory, you can run:
+이 프로젝트는 Create React App 으로 생성 되었습니다.
+
+## 사용 가능한 스크립트
+
+현재 경로에서 다음을 실행할 수 있습니다.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+개발 모드로 앱을 실행합니다.\
+해당 URL를 통해 브라우저에서 확인 할 수 있습니다.
+http://localhost:3000
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+코드를 수정하면 페이지가 다시 로드 됩니다.\
+콘솔에서 lint에러도 확인 할 수 있습니다.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+대화형 모드를 통한 테스트가 가능합니다.\
+테스트에 관한 정보를 다음 링크에서 얻을 수 있습니다.[running tests](https://facebook.github.io/create-react-app/docs/running-tests) 
 
 ### `npm run build`
 

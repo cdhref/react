@@ -1,4 +1,7 @@
-# react개발환경 설정(react_study 폴더 내용)
+> react_study : create-react-app를 사용한 환경
+> react_study_lite : create-react-app를 사용하지 않고 react환경 셋팅
+
+# react개발환경 설정(react_study)
 - visual studio code설치 (https://code.visualstudio.com/)
 - node.js다운로드/설치 (https://nodejs.org/)
 - project root path folder를 vscode로 열기

@@ -30,6 +30,3 @@ __중요! git에 등록 된 파일 참조해서 설정 할 것__
 
 browsers에 작성 가능한 목록은 다음 링크에서 확인 가능.
 [https://github.com/browserslist/browserslist#full-list](https://github.com/browserslist/browserslist#full-list)
-
-
-https://github.com/browserslist/browserslist#full-list

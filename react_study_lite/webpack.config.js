@@ -1,4 +1,5 @@
 const path = require('path');
+const { webpack } = require('webpack');
 
 module.exports = {
     name: "word-play-setting",
@@ -31,6 +32,9 @@ module.exports = {
             }
         }],
     },
+    plugins: [
+        new webpack.LoaderOptionPlugin({ debug: true }),
+    ],
     output: {
         // webpack으로 생성 된 파일이 저장 될 경로 / 파일명
         path: path.join(__dirname, 'dist'),

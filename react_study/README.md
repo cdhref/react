@@ -1,3 +1,6 @@
+# 개요
+create-react-app을 사용하여 react개발 환경을 설정하는 방법
+
 # react개발환경 설정(react_study)
 - visual studio code설치 (https://code.visualstudio.com/)
 - node.js다운로드/설치 (https://nodejs.org/)

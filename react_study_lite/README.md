@@ -1,3 +1,6 @@
+# 개요
+create-react-app를 사용하지 않고 필요한 요소만 사용하여 react개발환경을 구성하는 방법.
+
 # 개발환경 설정
 1. node.js 설치
 2. npm init
@@ -11,6 +14,9 @@
 # webpack.config.js 
 __중요! git에 등록 된 파일 참조해서 설정 할 것__
 
+webpack설정에 관한 상세내용을 확인은 webpack공식문서에서 참조 가능.
+https://webpack.js.org/concepts/
+
 > module > options > presets > @babel/preset-env  
 다음과 같이 설정 가능.
 
@@ -22,7 +28,7 @@ __중요! git에 등록 된 파일 참조해서 설정 할 것__
         [
             '@babel/preset-env', {
                 targets:{
-                    browsers: ['last 2 chrome versions'],
+                    browsers: ['5% in my stats'],
                 },
             },
         ],

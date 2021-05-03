@@ -5,7 +5,7 @@ import Nav from "./container/Nav";
 import SyntaxCompnent from "./page/SyntaxCompnent";
 import SyntaxHooks from "./page/SyntaxHooks";
 
-function App() { 
+export default function App() { 
   return ( 
     <Router> 
       <Nav />
@@ -16,5 +16,3 @@ function App() {
     </Router> 
   ); 
 } 
-
-export default App;

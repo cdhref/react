@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import WordPlay from './wordPlay';
+import WordPlay from './src/wordPlay';
+import NumBaseBall from './src/numBaseBall';
 
 /* 
 react module을 사용하는 3가지 방법
@@ -19,4 +20,5 @@ import ReactDom from 'react-dom';
 
 */ 
 
-ReactDom.render(<WordPlay />, document.querySelector('#root'));
+//ReactDom.render(<WordPlay />, document.querySelector('#root'));
+ReactDom.render(<NumBaseBall />, document.querySelector('#root'));

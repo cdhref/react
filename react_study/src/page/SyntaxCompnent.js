@@ -10,6 +10,11 @@ class SyntaxCompnent extends Component {
         inputValue: '',
         resultText: ''
     };
+
+    배열에 이전 요소를 추가하거나 할 때
+    this.setState((prevState) => {
+        objArray: [...prevState.objArray, {}]
+    })
     */
 
     // <input ref={(c) => { this.inputAnsw = c }} type="text" value={this.state.inputValue} onChange={this.inputVal} />
@@ -61,6 +66,15 @@ class SyntaxCompnent extends Component {
                 <h3>
                     compnent를 사용한 개발. 신규 개발에서는 hooks사용 권장
                 </h3>
+                {/* jsx에서의 주석 */}
+                {/* 
+                jsx에서 html tag에 for, class 속성을 기입 할 경우 
+                javascript의 반복문과 class 예약어와 구분이 어렵기 때문에 다음과 같이 사용한다.
+                for -> htmlFor, class -> className
+
+                이외에도 기존 html에서 합성어로 쓰이던 속성명(onclick, onsubmit등)도
+                camel case로 표기(onClick, onSubmit등) 해야 한다.
+                */}
                 <div>{this.state.first} x {this.state.second} = ?</div>
                 <form onSubmit={this.calcSubmit}>
                     <input ref={ this.initInputAnsw } type="text" value={this.state.inputValue} onChange={this.inputVal} />

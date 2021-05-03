@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const RefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
     name: "word-play-setting",
@@ -23,22 +24,32 @@ module.exports = {
                     [
                         '@babel/preset-env', {
                             targets:{
-                                browsers: ['> 5% in JP'],
+                                browsers: ['> 1% in JP'],
                             },
                             debug: true,
                         },
                     ],
                     '@babel/preset-react',
                 ],
+                plugins: [
+                    '@babel/plugin-proposal-class-properties',
+                    'react-refresh/babel',
+                ],
             }
         }],
     },
     plugins: [
         new webpack.LoaderOptionsPlugin({ debug: true }),
+        new RefreshWebpackPlugin(),
     ],
     output: {
         // webpack으로 생성 된 파일이 저장 될 경로 / 파일명
         path: path.join(__dirname, 'dist'),
-        filename: 'app.js'
+        filename: 'app.js',
+        publicPath: '/dist/',
+    },
+    devServer:{
+        publicPath: '/dist/',
+        hot: true,
     },
 };

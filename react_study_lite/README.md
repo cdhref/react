@@ -9,6 +9,8 @@ create-react-app를 사용하지 않고 필요한 요소만 사용하여 react�
 5. webpack.config.js파일 생성
 6. npm i -D @babel/core @babel/preset-env @babel/preset-react
 7. npm i babel-loader
+8. npm i react-refresh @pmmmwh/react-refresh-webpack-plugin -D
+9. npm i -D webpack-dev-server
 
 
 # webpack.config.js 

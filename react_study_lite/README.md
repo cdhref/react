@@ -30,9 +30,14 @@ https://webpack.js.org/concepts/
                 targets:{
                     browsers: ['5% in my stats'],
                 },
+                debug: true,
             },
         ],
     ],
+
+> debug: true,
+해당 옵션은 빌드 시 해당 preset에 대한 관련 정보를 출력 해 준다.
+@babel/preset-env의 경우 적용 대상의 browser목록을 출력.
 
 browsers에 작성 가능한 목록은 다음 링크에서 확인 가능.
 [https://github.com/browserslist/browserslist#full-list](https://github.com/browserslist/browserslist#full-list)

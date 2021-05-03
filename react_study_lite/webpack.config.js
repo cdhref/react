@@ -1,5 +1,5 @@
 const path = require('path');
-const { webpack } = require('webpack');
+const webpack = require('webpack');
 
 module.exports = {
     name: "word-play-setting",
@@ -23,17 +23,18 @@ module.exports = {
                     [
                         '@babel/preset-env', {
                             targets:{
-                                browsers: ['last 2 chrome versions'],
+                                browsers: ['> 5% in JP'],
                             },
+                            debug: true,
                         },
                     ],
-                    '@babel/preset-react'
+                    '@babel/preset-react',
                 ],
             }
         }],
     },
     plugins: [
-        new webpack.LoaderOptionPlugin({ debug: true }),
+        new webpack.LoaderOptionsPlugin({ debug: true }),
     ],
     output: {
         // webpack으로 생성 된 파일이 저장 될 경로 / 파일명

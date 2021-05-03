@@ -36,6 +36,7 @@ https://webpack.js.org/concepts/
     ],
 
 > debug: true,  
+
 해당 옵션은 빌드 시 해당 preset에 대한 관련 정보를 출력 해 준다.
 @babel/preset-env의 경우 적용 대상의 browser목록을 출력.
 

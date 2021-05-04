@@ -1,5 +1,12 @@
 # 개요
 create-react-app를 사용하지 않고 필요한 요소만 사용하여 react개발환경을 구성하는 방법.
+> numBaseBall.jsx  
+
+- hooks, module, useState, useRef, memo
+
+> reactionSpeedCheck.jsx
+
+- timer
 
 # 개발환경 설정
 1. node.js 설치
@@ -11,6 +18,7 @@ create-react-app를 사용하지 않고 필요한 요소만 사용하여 react�
 7. npm i babel-loader
 8. npm i react-refresh @pmmmwh/react-refresh-webpack-plugin -D
 9. npm i -D webpack-dev-server
+10. npm i -D css-loader
 
 
 # webpack.config.js 

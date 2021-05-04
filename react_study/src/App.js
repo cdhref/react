@@ -1,7 +1,7 @@
 import React from 'react'; 
 import { BrowserRouter as Router, Route } from 'react-router-dom'; 
-import './App.css'; 
-import Nav from "./container/Nav";
+import './App.css';
+import Nav from "./common/Nav";
 import SyntaxCompnent from "./page/SyntaxCompnent";
 import SyntaxHooks from "./page/SyntaxHooks";
 

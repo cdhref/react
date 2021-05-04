@@ -1,7 +1,10 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect, useCallback, memo, useMemo } from 'react';
 
-export default function SyntaxHooks(){
+function SyntaxHooks(){
     /*
+    *********** use.... 함수는 조건문 안에 넣으면 안됨     *************
+    *********** use.... 함수 내부에서 use...함수 실행 금지 *************
+
     list형태의 state를 변경할 때에는 
     deep copy > list수정 후 state에 반영
     ex)
@@ -21,18 +24,54 @@ export default function SyntaxHooks(){
     syntax [...var] spread operator
     ...은 배열의 각 요소를 
     */
-    const [first, setFirst] = useState(Math.ceil(Math.random() * 9));
-    const [second, setSecond] = useState(Math.ceil(Math.random() * 9));
+    // 아래 두 변수는 re-rendering돼도 getNum의 값을 기억 함
+    let letFirst = useMemo(() => getNum(), []);
+    let letSocond = useMemo(() => getNum(), []);
+
+    const [first, setFirst] = useState(letFirst);
+    const [second, setSecond] = useState(letSocond);
     const [inputValue, setInputValue] = useState('');
     const [resultText, setResultText] = useState('');
-
     const inputAnsw = useRef(null);
 
-    function calcSubmit(e){
+    /*
+    MEMO: Hooks의 lifecycle(SyntaxHooks 기준)
+
+    1. create
+    useMemo > render > useEffect
+
+    2. re-rendering
+    useState(), useReducer(), useContext() check > useCallback() ... 바뀐 내용 있으면 아래 실행
+    render > useEffect retun() > useEffect
+
+    3. destroy
+    useEffect return(), useLayoutEffect()
+    */
+    useEffect(() => {
+        console.log('useEffect');
+        return () => {
+        console.log('useEffect > return');
+
+        }
+    }, []);
+    /*[] 가 비어있을 경우 최초 1회만 실행되고 re-rendering시 호출 안됨*/
+
+    /* re-rendering에만 반응하는 useEffect 정의
+    const mounted = useRef(false);
+    useEffect(() => {
+        if(!mounted.current){
+            mounted.current = true;
+        }
+        else{
+            // code
+        }
+    });
+    */
+    const calcSubmit = useCallback((e) => {
         e.preventDefault();
         if (first * second === parseInt(inputValue)) {
-            setFirst(Math.ceil(Math.random() * 9));
-            setSecond(Math.ceil(Math.random() * 9));
+            setFirst(getNum());
+            setSecond(getNum());
             setInputValue('');
             setResultText('정답!');
         }
@@ -41,11 +80,15 @@ export default function SyntaxHooks(){
             setResultText('틀렸어....다..');
         }
         inputAnsw.current.focus();
+    }, [inputVal]);
+
+    function getNum(){
+        return Math.ceil(Math.random() * 9);
     }
 
-    function inputVal(e){
+    const inputVal = useCallback((e) => {
         setInputValue(e.target.value);
-    }
+    },[]);
 
     return (
         <>
@@ -70,3 +113,5 @@ export default function SyntaxHooks(){
         </>
     );
 }
+
+export default memo(SyntaxHooks);

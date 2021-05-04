@@ -90,6 +90,7 @@ body{
 
 .menu > ul > li:nth-child(n+2){
   padding: 10px 0;
+  padding-right: 10px;
 }
 
 .menu > ul > li > a{

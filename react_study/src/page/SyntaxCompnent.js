@@ -30,6 +30,28 @@ class SyntaxCompnent extends Component {
         };
     }
 
+    /*
+    MEMO: component의 lifecycle
+    1. create
+    create > constructor > render > componentDidMount
+
+    2. re-rendering
+    shouldComponentUpdate() == true > render > componentDidUpdate
+
+    3. destroy
+    componentWillUnmount > destroy
+
+    */
+    //componentDidMount(){/*component의 첫 랜더링 시 호출*/}
+    
+    /*shouldComponentUpdate(nextProps, nextState, nextContext){
+        //rerendering 되기 전 호출
+        //return true; //랜더링 됨
+        //return false; //랜더링 안됨
+    }*/
+    //componentDidUpdate(){/*state변경 등으로 인해 rerendering되면 호출*/}
+    //componentWillUnmount(){/*컴포넌트가 소멸 될 때 호출 됨*/}
+
     //function 정의
     calcSubmit = (e) => {
         e.preventDefault();
@@ -44,7 +66,7 @@ class SyntaxCompnent extends Component {
         else {
             this.setState({
                 inputValue: "",
-                resultText: "틀렸어....다.."
+                resultText: "틀렸어.."
             });
         }
         this.inputAnsw.focus();
@@ -75,13 +97,12 @@ class SyntaxCompnent extends Component {
                 이외에도 기존 html에서 합성어로 쓰이던 속성명(onclick, onsubmit등)도
                 camel case로 표기(onClick, onSubmit등) 해야 한다.
                 */}
-                <div>{this.state.first} x {this.state.second} = ?</div>
-                <form onSubmit={this.calcSubmit}>
-                    <input ref={ this.initInputAnsw } type="text" value={this.state.inputValue} onChange={this.inputVal} />
+                <div>{ this.state.first } x { this.state.second } = ?</div>
+                <form onSubmit={ this.calcSubmit }>
+                    <input ref={ this.initInputAnsw } type="text" value={ this.state.inputValue } onChange={ this.inputVal } />
                     <button type="submit">확인</button>
                     <div>{this.state.resultText}</div>
                 </form>
-
             </>
         );
     }

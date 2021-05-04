@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 
 class Nav extends Component{
     divMenu;
 
     menu = (e) => {
-        // jquery를 사용한 style참조
-        // this.divMenu.style.display == 'block'로도 사용가능
-        if($('#menu').css('display') == 'block'){
-            //react object를 사용한 style변경
+        if(this.divMenu.style.display === 'block'){
             this.divMenu.style.display = 'none';
         }
         else{
-            // jquery를 사용한 style변경
-            $('#menu').css('display', 'block');
+            this.divMenu.style.display = 'block';
         }
     }
 
@@ -31,10 +26,19 @@ class Nav extends Component{
                 <div ref={(c)=>{this.divMenu = c}} id="menu" className="menu">
                     <ul>
                         <li>
-                            <a href="/SyntaxCompnent">文法参照用(Compnent)</a>
+                            <a href="/wordPlay">wordPlay</a>
                         </li>
                         <li>
-                            <a href="/SyntaxHooks">文法参照用(Hooks)</a>
+                            <a href="/numBaseBall">numBaseBall</a>
+                        </li>
+                        <li>
+                            <a href="/lotto">lotto</a>
+                        </li>
+                        <li>
+                            <a href="/reactionSpeedCheck">reactionSpeedCheck</a>
+                        </li>
+                        <li>
+                            <a href="/mineSearch">mineSearch</a>
                         </li>
                     </ul>
                 </div>

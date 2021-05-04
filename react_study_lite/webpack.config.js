@@ -36,7 +36,11 @@ module.exports = {
                     'react-refresh/babel',
                 ],
             }
-        }],
+        },
+        {
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader"],
+        },],
     },
     plugins: [
         new webpack.LoaderOptionsPlugin({ debug: true }),
@@ -49,6 +53,7 @@ module.exports = {
         publicPath: '/dist/',
     },
     devServer:{
+        historyApiFallback: true,
         publicPath: '/dist/',
         hot: true,
     },
